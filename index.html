@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Brenda</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<!--Aqui aparece no cabecalho da pagina-->    
+  <header class="topo">
+    <nav class="menu">
+      <div class="marca">
+        <h1>Brenda Jacomini</h1>
+        <p>Portifólio Pessoal</p>
+      </div>
+
+<!--aqui fica a parte do menu fixo.-->
+      <ul id="listaMenu">
+        <li><a href="#sobre">Sobre mim</a></li>
+        <li><a href="#formacao">Formação</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+<!--aqui e pra mudar o tema da pagina para escuro ou claro-->      
+      <div class="controles-menu">
+        <button id="btnTema" class="btn-tema" type="button" aria-label="Alternar tema" title="Alternar tema">&#9790;</button>
+        <button id="btnMenu" class="btn-menu" type="button">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+<!--aqui tem a parte onde está o sobre mim, minhas informações-->    
+    <section id="sobre" class="secao inicio">
+      <div class="sobre-conteudo">
+        <div class="sobre-texto">
+          <h2>Sobre mim</h2>
+          <p>
+            Olá! Meu nome é Brenda tenho 27 anos, sou estudante de Ciência da Computação e tenho interesse
+            por tecnologia, desenvolvimento web e criação de projetos digitais. 
+          </p>
+          <p>
+            Gosto de aprender coisas novas, desenvolver ideias criativas e transformar
+            projetos em páginas funcionais. Também gosto de músicas, culturas, viagens,
+            animais, jogos online e leitura.
+          </p>
+        </div>
+
+<!--minha foto que esta no sobre mim-->        
+        <div class="sobre-imagem">
+          <img src="imagem/Brenda/Brenda.png" alt="Foto de Brenda">
+        </div>
+      </div>
+    </section>
+
+<!--minhas informaçoes de formação-->  
+    <section id="formacao" class="secao">
+      <h2>Formação</h2>
+      <div class="card">
+        <h3>Ciência da Computação</h3>
+        <p>Curso superior em andamento.</p>
+      </div>
+
+<!--idiomas que estou aprendendo-->      
+      <div class="card">
+        <h3>Idiomas</h3>
+        <p>Português nativo.</p>
+        <p>Inglês em aprendizado.</p>
+        <p>Italiano em aprendizado.</p>
+      </div>
+
+<!--meus conhecimentos na Area-->      
+      <div class="card">
+        <h3>Conhecimentos</h3>
+        <p>HTML5, CSS3, JavaScript, CSS, Flask como API, C++, Python.</p>
+        <p>Também tenho conhecimento em Banco de Dados: Firebase, Jason, Azure. </p>
+      </div>
+    </section>
+
+<!--meus trabalhos em andamento, ainda não estão concluidos por isso nao tem o link para acessar, e um deles é o trabalho da faculdade-->    
+    <section id="portfolio" class="secao">
+      <h2>Portfólio</h2>
+      <p>Aqui estão alguns projetos e ideias que fazem parte da minha trajetória:</p>
+<!--aqui é o portifolio do trabalho-->
+      <div class="grid-projetos">
+        <div class="projeto">
+          <h3>Site Pessoal</h3>
+          <p>Projeto de portfólio online desenvolvido com HTML, CSS e JavaScript.</p>
+          <a href="#" target="_blank">Ver projeto</a>
+        </div>
+<!--aqui é o trabalho que estou fazendo para a faculdade, mas que vou ultilizar para meu trabalho no futuro-->
+        <div class="projeto">
+          <h3>Calculadora de Carbono</h3>
+          <p>Ideia de sistema para calcular emissão pessoal de carbono.</p>
+          <span class="status-projeto">Em andamento</span>
+        </div>
+
+<!--aqui é o trabalho que estou desenvolvendo para uma empresa-->        
+        <div class="projeto">
+          <h3>Desafio RDG</h3>
+          <p>Site em desenvolvimento para projeto digital com foco em desafios e comunidade do Rotas Do Garimpo.</p>
+          <span class="status-projeto">Em andamento</span>
+        </div>
+      </div>
+    </section>
+
+<!--aqui é a parte para pessoa entrar em contato-->    
+    <section id="contato" class="secao">
+      <h2>Contato</h2>
+
+      <form id="formContato">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="Digite seu e-mail">
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" placeholder="Digite sua mensagem"></textarea>
+
+        <button type="submit">Enviar mensagem</button>
+      </form>
+
+      <p id="mensagemRetorno"></p>
+    </section>
+
+  </main>
+
+<!--aqui e o rodape do site-->  
+  <footer>
+    <p>© 2026 - Portfólio Brenda Jacomini</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
